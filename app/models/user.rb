@@ -30,8 +30,4 @@ class User < ApplicationRecord
 
   has_many :forum_threads
   has_many :forum_posts
-
-  def name
-    "#{first_name} #{last_name}"
-  end
 end

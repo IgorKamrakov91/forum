@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   end
 
   root 'forum_threads#index'
+  default_url_options :host => "example.com"
 end

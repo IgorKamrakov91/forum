@@ -34,3 +34,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # added gems
 gem 'devise', '~> 4.2'
 gem 'bootstrap', '~> 4.0.0.alpha5'
+gem 'record_tag_helper', '~> 1.0'
+gem 'sucker_punch', '~> 2.0', '>= 2.0.2'
