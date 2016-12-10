@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light bg-faded">
+  <div class="container">
+    <div class="nav navbar-nav">
+      <%= link_to 'Forum', root_path, class: 'navbar-brand' %>
+      <div class="float-xs-right">
+      <% if user_signed_in? %>
+        <%= link_to 'Account', edit_user_registration_path, class: 'btn btn-secondary' %>
+        <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-secondary' %>
+      <% else %>
+        <%= link_to 'Sign Up', new_user_registration_path, class: 'btn btn-secondary' %>
+        <%= link_to 'Login', new_user_session_path, class: 'btn btn-secondary' %>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</nav>
