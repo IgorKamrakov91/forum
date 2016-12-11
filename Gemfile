@@ -32,9 +32,18 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # added gems
+  # users
 gem 'devise', '~> 4.2'
+  # styling
 gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'record_tag_helper', '~> 1.0'
+  # mailing
 gem 'sucker_punch', '~> 2.0', '>= 2.0.2'
+  # search
 gem 'ransack', github: 'activerecord-hackery/ransack'
 gem 'local_time', '~> 1.0', '>= 1.0.3'
+  # markdown, emoji etc.
+gem 'html-pipeline'
+gem 'github-markdown'
+gem 'gemoji'
+gem 'sanitize', '~> 4.4'

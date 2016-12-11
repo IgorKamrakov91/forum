@@ -1,0 +1,2 @@
+ForumPostHelper	/home/igor/Rails/gorails/forum/app/helpers/forum_posts_helper.rb	/^module ForumPostHelper$/;"	module	line:1
+markdownify	/home/igor/Rails/gorails/forum/app/helpers/forum_posts_helper.rb	/^  def markdownify(content)$/;"	method	line:2	class:ForumPostHelper
