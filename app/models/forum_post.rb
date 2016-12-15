@@ -16,6 +16,11 @@ class ForumPost < ApplicationRecord
 
   validates :body, presence: true
 
+  # overwriting original belongs_to method 
+  def user
+    User.unscoped { super }
+  end
+
   def send_notifications!
     # Get all uniq users, except current user
     users = forum_thread.users.uniq - [user]

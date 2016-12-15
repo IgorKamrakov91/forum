@@ -3,3 +3,9 @@ markdownify	/home/igor/Rails/gorails/forum/app/helpers/forum_posts_helper.rb	/^ 
 AddDeletedAtToForumThreads	/home/igor/Rails/gorails/forum/db/migrate/20161215171149_add_deleted_at_to_forum_threads.rb	/^class AddDeletedAtToForumThreads < ActiveRecord::Migration[5.0]$/;"	class	line:1
 change	/home/igor/Rails/gorails/forum/db/migrate/20161215171149_add_deleted_at_to_forum_threads.rb	/^  def change$/;"	method	line:2	class:AddDeletedAtToForumThreads
 ForumThread	/home/igor/Rails/gorails/forum/app/models/forum_thread.rb	/^class ForumThread < ApplicationRecord$/;"	class	line:13
+AddDeletedAtToUsers	/home/igor/Rails/gorails/forum/db/migrate/20161215172143_add_deleted_at_to_users.rb	/^class AddDeletedAtToUsers < ActiveRecord::Migration[5.0]$/;"	class	line:1
+change	/home/igor/Rails/gorails/forum/db/migrate/20161215172143_add_deleted_at_to_users.rb	/^  def change$/;"	method	line:2	class:AddDeletedAtToUsers
+User	/home/igor/Rails/gorails/forum/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:25
+ForumPost	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^class ForumPost < ApplicationRecord$/;"	class	line:13
+user	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^  def user$/;"	method	line:20	class:ForumPost
+send_notifications!	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^  def send_notifications!$/;"	method	line:24	class:ForumPost
