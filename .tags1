@@ -4,5 +4,4 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ForumPostHelper	/home/igor/Rails/gorails/forum/app/helpers/forum_posts_helper.rb	/^module ForumPostHelper$/;"	module	line:1
-markdownify	/home/igor/Rails/gorails/forum/app/helpers/forum_posts_helper.rb	/^  def markdownify(content)$/;"	method	line:2	class:ForumPostHelper
+ForumThread	/home/igor/Rails/gorails/forum/app/models/forum_thread.rb	/^class ForumThread < ApplicationRecord$/;"	class	line:13

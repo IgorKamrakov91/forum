@@ -1,2 +1,5 @@
 ForumPostHelper	/home/igor/Rails/gorails/forum/app/helpers/forum_posts_helper.rb	/^module ForumPostHelper$/;"	module	line:1
 markdownify	/home/igor/Rails/gorails/forum/app/helpers/forum_posts_helper.rb	/^  def markdownify(content)$/;"	method	line:2	class:ForumPostHelper
+AddDeletedAtToForumThreads	/home/igor/Rails/gorails/forum/db/migrate/20161215171149_add_deleted_at_to_forum_threads.rb	/^class AddDeletedAtToForumThreads < ActiveRecord::Migration[5.0]$/;"	class	line:1
+change	/home/igor/Rails/gorails/forum/db/migrate/20161215171149_add_deleted_at_to_forum_threads.rb	/^  def change$/;"	method	line:2	class:AddDeletedAtToForumThreads
+ForumThread	/home/igor/Rails/gorails/forum/app/models/forum_thread.rb	/^class ForumThread < ApplicationRecord$/;"	class	line:13
