@@ -4,3 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+User	/home/igor/Rails/gorails/forum/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:29
+import	/home/igor/Rails/gorails/forum/app/models/user.rb	/^  def self.import(file)$/;"	singleton method	line:39	class:User
+assign_from_row	/home/igor/Rails/gorails/forum/app/models/user.rb	/^  def self.assign_from_row(row)$/;"	singleton method	line:54	class:User
+name	/home/igor/Rails/gorails/forum/app/models/user.rb	/^  def name$/;"	method	line:60	class:User

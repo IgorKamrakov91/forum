@@ -1,0 +1,23 @@
+<h1>Users</h1>
+
+<table class="table table-striped">
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= user.id %></td>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= form_tag import_users_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag 'Upload' %>
+<% end %>

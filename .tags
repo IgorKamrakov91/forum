@@ -5,7 +5,13 @@ change	/home/igor/Rails/gorails/forum/db/migrate/20161215171149_add_deleted_at_t
 ForumThread	/home/igor/Rails/gorails/forum/app/models/forum_thread.rb	/^class ForumThread < ApplicationRecord$/;"	class	line:13
 AddDeletedAtToUsers	/home/igor/Rails/gorails/forum/db/migrate/20161215172143_add_deleted_at_to_users.rb	/^class AddDeletedAtToUsers < ActiveRecord::Migration[5.0]$/;"	class	line:1
 change	/home/igor/Rails/gorails/forum/db/migrate/20161215172143_add_deleted_at_to_users.rb	/^  def change$/;"	method	line:2	class:AddDeletedAtToUsers
-User	/home/igor/Rails/gorails/forum/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:25
 ForumPost	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^class ForumPost < ApplicationRecord$/;"	class	line:13
 user	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^  def user$/;"	method	line:20	class:ForumPost
 send_notifications!	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^  def send_notifications!$/;"	method	line:24	class:ForumPost
+UsersController	/home/igor/Rails/gorails/forum/app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	class	line:1
+index	/home/igor/Rails/gorails/forum/app/controllers/users_controller.rb	/^  def index$/;"	method	line:2	class:UsersController
+import	/home/igor/Rails/gorails/forum/app/controllers/users_controller.rb	/^  def import$/;"	method	line:6	class:UsersController
+User	/home/igor/Rails/gorails/forum/app/models/user.rb	/^class User < ApplicationRecord$/;"	class	line:29
+import	/home/igor/Rails/gorails/forum/app/models/user.rb	/^  def self.import(file)$/;"	singleton method	line:39	class:User
+assign_from_row	/home/igor/Rails/gorails/forum/app/models/user.rb	/^  def self.assign_from_row(row)$/;"	singleton method	line:54	class:User
+name	/home/igor/Rails/gorails/forum/app/models/user.rb	/^  def name$/;"	method	line:60	class:User
