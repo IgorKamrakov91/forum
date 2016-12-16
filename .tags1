@@ -4,6 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ForumPost	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^class ForumPost < ApplicationRecord$/;"	class	line:13
-user	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^  def user$/;"	method	line:20	class:ForumPost
-send_notifications!	/home/igor/Rails/gorails/forum/app/models/forum_post.rb	/^  def send_notifications!$/;"	method	line:24	class:ForumPost
