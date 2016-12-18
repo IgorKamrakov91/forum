@@ -1,18 +1,10 @@
 namespace :import do
+
   desc 'Import users from csv'
   task users: :environment do
-    filename = File.join Rails.root, 'users.csv'
-    counter = 0
-
-    CSV.foreach(filename, headers: true, header_converters: :symbol) do |row|
-      user = User.assign_from_row(row)
-      if user.save
-        counter += 1
-      else
-        puts "#{user.email} - #{user.errors.full_messages.join(",")}" if user.errors.any?
-      end
-    end
-
-    puts "Imported #{counter} users."
+    import = User::Import.new file: File.open('users.csv')
+    import.process!
+    puts "Imported #{import.imported_count} users"
+    puts import.erros.full_messages
   end
 end

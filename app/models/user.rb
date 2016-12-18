@@ -36,21 +36,6 @@ class User < ApplicationRecord
   has_many :forum_threads
   has_many :forum_posts
 
-  def self.import(file)
-    counter = 0
-
-    CSV.foreach(file.path, headers: true, header_converters: :symbol) do |row|
-      user = User.assign_from_row(row)
-      if user.save
-        counter += 1
-      else
-        puts "#{user.email} - #{user.errors.full_messages.join(",")}" if user.errors.any?
-      end
-    end
-
-    return counter
-  end
-
   def self.assign_from_row(row)
     user = User.where(email: row[:email]).first_or_initialize
     user.assign_attributes row.to_hash.slice(:first_name, :last_name)
